@@ -13,6 +13,7 @@ Python 2.7.x
 
 ![example]
 (https://awawastuff.files.wordpress.com/2017/04/vi-sky-mon1-configuration-of-hosts.png)
+
 8. Enable/Disable all discovery rules/items/triggers you think necessary, add new or modify existing ones.
 
 Default template has rules and items for following services:
