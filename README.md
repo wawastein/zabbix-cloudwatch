@@ -11,8 +11,7 @@ Python 2.7.x
 6. Put credentials of account created in (1) into `/usr/lib/zabbix/scripts/conf/aws.conf`
 7. Create host with 0.0.0.0 as interface and link it to the template. Change macros `ACCOUNT` and `REGION` to correspond to your case: 
 
-![example]
-(https://awawastuff.files.wordpress.com/2017/04/vi-sky-mon1-configuration-of-hosts.png)
+![example](https://awawastuff.files.wordpress.com/2017/04/vi-sky-mon1-configuration-of-hosts.png)
 
 8. Enable/Disable all discovery rules/items/triggers you think necessary, add new or modify existing ones.
 
