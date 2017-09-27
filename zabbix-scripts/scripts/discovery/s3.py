@@ -8,7 +8,7 @@ class Discoverer(BasicDiscoverer):
         data = list()
         for bucket in response["Buckets"]:
             ldd = {
-                "{#NAME}": bucket['Name'],
+                "{#BUCKET_NAME}": bucket['Name'],
             }
             data.append(ldd)
         return data
