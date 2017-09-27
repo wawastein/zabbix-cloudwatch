@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
     <version>3.0</version>
-    <date>2017-09-27T19:59:39Z</date>
+    <date>2017-09-27T20:42:46Z</date>
     <groups>
         <group>
             <name>Templates</name>
@@ -942,7 +942,7 @@
                         </item_prototype>
                         <item_prototype>
                             <name>{#BUCKET_NAME} Number Of Objects</name>
-                            <type>0</type>
+                            <type>10</type>
                             <snmp_community/>
                             <multiplier>0</multiplier>
                             <snmp_oid/>
