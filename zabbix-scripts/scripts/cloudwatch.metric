@@ -6,18 +6,18 @@ import argparse
 
 
 class Checker(AWSClient):
-    def get_metric(self, interval, metric, namespace, statistic, dimension):
+    def get_metric(self, interval, metric, namespace, statistic, dimensions):
         # Constructing timestamps for limiting CloudWatch datapoint list
         end_time = datetime.datetime.utcnow()
         start_time = end_time - datetime.timedelta(seconds=interval)
         result = self.client.get_metric_statistics(
-                Namespace=namespace,
-                MetricName=metric,
-                Dimensions=[dimension, ],
-                StartTime=start_time.isoformat(),
-                EndTime=end_time.isoformat(),
-                Statistics=[statistic, ],
-                Period=interval)
+            Namespace=namespace,
+            MetricName=metric,
+            Dimensions=dimensions,
+            StartTime=start_time.isoformat(),
+            EndTime=end_time.isoformat(),
+            Statistics=[statistic, ],
+            Period=interval)
         # We use only the first datapoint from list
         # Return -1 if there are no datapoints
         if len(result["Datapoints"]) > 0:
@@ -57,7 +57,7 @@ if __name__ == "__main__":
                         help="Type of statistic",
                         required=True)
     parser.add_argument("--dimension", dest="dimension",
-                        help="Dimension (instance id)",
+                        help="Dimension(s)",
                         required=True)
     parser.add_argument("--region", dest="region",
                         help="Instance region",
@@ -75,8 +75,10 @@ if __name__ == "__main__":
 
     # AWS requires dimension to be dict like:
     # { "Name": dimension_name, "Value" dimension_value }
-    instance = args.dimension.split("=")
-    dimension = dict(zip(("Name", "Value"), instance))
+    dimensions = list()
+    for dimension in args.dimension.split(","):
+        instance = dimension.split("=")
+        dimensions.append(dict(zip(("Name", "Value"), instance)))
 
     default_path = "/usr/lib/zabbix/scripts/conf/aws.conf"
     conf_file = args.config if args.config else default_path
@@ -89,4 +91,4 @@ if __name__ == "__main__":
                              metric=args.metric,
                              namespace=args.namespace,
                              statistic=args.statistic,
-                             dimension=dimension)
+                             dimensions=dimensions)
