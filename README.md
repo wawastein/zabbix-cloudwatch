@@ -1,6 +1,8 @@
 # zabbix-cloudwatch
 Cloudwatch integration for Zabbix 3.x
 
+**Current release: 1.1.0. Zabbix template was tested with Zabbix 3.4, please revert to 1.0.0 if you find any backward incompatibility and open an issue.**
+
 Python 2.7.x
 
 1. Create specialized user account in AWS and grant it permissions for required services and API calls (for example `describe_instances()` for EC2)
@@ -20,6 +22,8 @@ Default template has rules and items for following services:
 * RDS (`describe_db_instances()` API call)
 * ELB (`describe_load_balancers()` API call)
 * EMR (`list_clusters()` API call)
+* ELBv2 (`describe_target_groups()` API call)
+* S3 (`list_buckets()` API call)
 
 Detailed overview at: https://wordpress.com/read/feeds/49943587/posts/1417437611
 
