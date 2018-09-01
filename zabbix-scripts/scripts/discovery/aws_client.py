@@ -13,3 +13,4 @@ class AWSClient(object):
             aws_access_key_id=aws_key,
             aws_secret_access_key=aws_secret,
             region_name=region)
+        self.region = region
