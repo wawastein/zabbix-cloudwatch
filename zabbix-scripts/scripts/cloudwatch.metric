@@ -1,14 +1,22 @@
-#!/usr/bin/python
-from discovery.aws_client import AWSClient
+#!/usr/bin/env python
 import ConfigParser
-import datetime
 import argparse
+import datetime
+import warnings
 
+from discovery.aws_client import AWSClient
+
+warnings.filterwarnings("ignore", category=UnicodeWarning)
+
+
+# while datetime.datetime.utcnow().second <15:
+#    sleep(1)
 
 class Checker(AWSClient):
     def get_metric(self, interval, metric, namespace, statistic, dimensions):
         # Constructing timestamps for limiting CloudWatch datapoint list
-        end_time = datetime.datetime.utcnow()
+        time_delay = datetime.timedelta(seconds=80)
+        end_time = datetime.datetime.utcnow().replace(microsecond=0, second=0) - time_delay
         start_time = end_time - datetime.timedelta(seconds=interval)
         result = self.client.get_metric_statistics(
             Namespace=namespace,
@@ -29,8 +37,20 @@ class Checker(AWSClient):
         # This is a dirty hack, because CW returns bytes in float
         # This can be a problem, because RDS instances can be huge
         # and overflow Zabbix DB floating point data type
+        # RDS metric
         if metric == "FreeStorageSpace":
             ret_val = int(ret_val)
+        # ElastiCache metric
+        if metric == "FreeableMemory":
+            ret_val = int(ret_val)
+        if metric == "SwapUsage":
+            # unit: byte
+            ret_val = int(ret_val)
+        if metric == "Evictions":
+            ret_val = int(ret_val)
+        if metric == "CurrConnections":
+            ret_val = int(ret_val)
+
         return ret_val
 
     @property
@@ -63,7 +83,7 @@ if __name__ == "__main__":
                         help="Instance region",
                         required=True)
     parser.add_argument("--account", dest="account",
-                        help="Instance account`",
+                        help="Instance account",
                         required=True)
     parser.add_argument("--config", dest="config",
                         help="Optional path to config file",
@@ -79,8 +99,8 @@ if __name__ == "__main__":
     for dimension in args.dimension.split(","):
         instance = dimension.split("=")
         dimensions.append(dict(zip(("Name", "Value"), instance)))
-
-    default_path = "/usr/lib/zabbix/scripts/conf/aws.conf"
+    # default_path = "/usr/lib/zabbix/scripts/conf/aws.conf"
+    default_path = "./conf/aws.conf"
     conf_file = args.config if args.config else default_path
     config = ConfigParser.ConfigParser()
     config.readfp(open(conf_file))
