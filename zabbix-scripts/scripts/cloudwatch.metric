@@ -41,6 +41,8 @@ class Checker(AWSClient):
         if metric == "FreeStorageSpace":
             ret_val = int(ret_val)
         # ElastiCache metric
+        if metric == "BytesUsedForCache":
+            ret_val = int(ret_val)
         if metric == "FreeableMemory":
             ret_val = int(ret_val)
         if metric == "SwapUsage":
