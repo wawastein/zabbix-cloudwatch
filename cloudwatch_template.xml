@@ -533,7 +533,7 @@
                             <type>15</type>
                             <snmp_community/>
                             <snmp_oid/>
-                            <key>instances[{#TARGET_GROUP_LOAD_BALANCER_NAME}][{#TARGET_GROUP_NAME}]</key>
+                            <key>instances[{#TARGET_GROUP_LOAD_BALANCER_NAME},{#TARGET_GROUP_NAME}]</key>
                             <delay>3600</delay>
                             <history>30d</history>
                             <trends>60d</trends>
@@ -573,7 +573,7 @@
                     </item_prototypes>
                     <trigger_prototypes>
                         <trigger_prototype>
-                            <expression>{Cloudwatch Template:instances[{#TARGET_GROUP_LOAD_BALANCER_NAME}][{#TARGET_GROUP_NAME}].last()}=-1</expression>
+                            <expression>{Cloudwatch Template:instances[{#TARGET_GROUP_LOAD_BALANCER_NAME},{#TARGET_GROUP_NAME}].last()}=-1</expression>
                             <recovery_mode>0</recovery_mode>
                             <recovery_expression/>
                             <name>ELBv2: No data points for {#TARGET_GROUP_LOAD_BALANCER_NAME} target {#TARGET_GROUP_NAME}</name>
@@ -590,7 +590,7 @@
                             <tags/>
                         </trigger_prototype>
                         <trigger_prototype>
-                            <expression>{Cloudwatch Template:instances[{#TARGET_GROUP_LOAD_BALANCER_NAME}][{#TARGET_GROUP_NAME}].last()}=0</expression>
+                            <expression>{Cloudwatch Template:instances[{#TARGET_GROUP_LOAD_BALANCER_NAME},{#TARGET_GROUP_NAME}].last()}=0</expression>
                             <recovery_mode>0</recovery_mode>
                             <recovery_expression/>
                             <name>ELBv2: {#TARGET_GROUP_LOAD_BALANCER_NAME} target group {#TARGET_GROUP_NAME} has no active instances</name>
