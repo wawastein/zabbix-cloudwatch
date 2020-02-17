@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
-    <version>3.4</version>
-    <date>2018-08-28T04:37:07Z</date>
+    <version>4.0</version>
+    <date>2020-02-17T07:00:48Z</date>
     <groups>
         <group>
             <name>Templates</name>
@@ -116,8 +116,26 @@
                             <logtimefmt/>
                             <preprocessing/>
                             <jmx_endpoint/>
+                            <timeout>3s</timeout>
+                            <url/>
+                            <query_fields/>
+                            <posts/>
+                            <status_codes>200</status_codes>
+                            <follow_redirects>1</follow_redirects>
+                            <post_type>0</post_type>
+                            <http_proxy/>
+                            <headers/>
+                            <retrieve_mode>0</retrieve_mode>
+                            <request_method>0</request_method>
+                            <output_format>0</output_format>
+                            <allow_traps>0</allow_traps>
+                            <ssl_cert_file/>
+                            <ssl_key_file/>
+                            <ssl_key_password/>
+                            <verify_peer>0</verify_peer>
+                            <verify_host>0</verify_host>
                             <application_prototypes/>
-                            <master_item_prototype/>
+                            <master_item/>
                         </item_prototype>
                         <item_prototype>
                             <name>Instance health {#NAME}</name>
@@ -158,8 +176,26 @@
                             <logtimefmt/>
                             <preprocessing/>
                             <jmx_endpoint/>
+                            <timeout>3s</timeout>
+                            <url/>
+                            <query_fields/>
+                            <posts/>
+                            <status_codes>200</status_codes>
+                            <follow_redirects>1</follow_redirects>
+                            <post_type>0</post_type>
+                            <http_proxy/>
+                            <headers/>
+                            <retrieve_mode>0</retrieve_mode>
+                            <request_method>0</request_method>
+                            <output_format>0</output_format>
+                            <allow_traps>0</allow_traps>
+                            <ssl_cert_file/>
+                            <ssl_key_file/>
+                            <ssl_key_password/>
+                            <verify_peer>0</verify_peer>
+                            <verify_host>0</verify_host>
                             <application_prototypes/>
-                            <master_item_prototype/>
+                            <master_item/>
                         </item_prototype>
                         <item_prototype>
                             <name>Hypervisor health {#NAME}</name>
@@ -200,8 +236,26 @@
                             <logtimefmt/>
                             <preprocessing/>
                             <jmx_endpoint/>
+                            <timeout>3s</timeout>
+                            <url/>
+                            <query_fields/>
+                            <posts/>
+                            <status_codes>200</status_codes>
+                            <follow_redirects>1</follow_redirects>
+                            <post_type>0</post_type>
+                            <http_proxy/>
+                            <headers/>
+                            <retrieve_mode>0</retrieve_mode>
+                            <request_method>0</request_method>
+                            <output_format>0</output_format>
+                            <allow_traps>0</allow_traps>
+                            <ssl_cert_file/>
+                            <ssl_key_file/>
+                            <ssl_key_password/>
+                            <verify_peer>0</verify_peer>
+                            <verify_host>0</verify_host>
                             <application_prototypes/>
-                            <master_item_prototype/>
+                            <master_item/>
                         </item_prototype>
                     </item_prototypes>
                     <trigger_prototypes>
@@ -296,6 +350,23 @@
                     <graph_prototypes/>
                     <host_prototypes/>
                     <jmx_endpoint/>
+                    <timeout>3s</timeout>
+                    <url/>
+                    <query_fields/>
+                    <posts/>
+                    <status_codes>200</status_codes>
+                    <follow_redirects>1</follow_redirects>
+                    <post_type>0</post_type>
+                    <http_proxy/>
+                    <headers/>
+                    <retrieve_mode>0</retrieve_mode>
+                    <request_method>0</request_method>
+                    <allow_traps>0</allow_traps>
+                    <ssl_cert_file/>
+                    <ssl_key_file/>
+                    <ssl_key_password/>
+                    <verify_peer>0</verify_peer>
+                    <verify_host>0</verify_host>
                 </discovery_rule>
                 <discovery_rule>
                     <name>ELB Discovery</name>
@@ -368,8 +439,26 @@
                             <logtimefmt/>
                             <preprocessing/>
                             <jmx_endpoint/>
+                            <timeout>3s</timeout>
+                            <url/>
+                            <query_fields/>
+                            <posts/>
+                            <status_codes>200</status_codes>
+                            <follow_redirects>1</follow_redirects>
+                            <post_type>0</post_type>
+                            <http_proxy/>
+                            <headers/>
+                            <retrieve_mode>0</retrieve_mode>
+                            <request_method>0</request_method>
+                            <output_format>0</output_format>
+                            <allow_traps>0</allow_traps>
+                            <ssl_cert_file/>
+                            <ssl_key_file/>
+                            <ssl_key_password/>
+                            <verify_peer>0</verify_peer>
+                            <verify_host>0</verify_host>
                             <application_prototypes/>
-                            <master_item_prototype/>
+                            <master_item/>
                         </item_prototype>
                         <item_prototype>
                             <name>{#BALANCER_NAME} active instances</name>
@@ -410,8 +499,26 @@
                             <logtimefmt/>
                             <preprocessing/>
                             <jmx_endpoint/>
+                            <timeout>3s</timeout>
+                            <url/>
+                            <query_fields/>
+                            <posts/>
+                            <status_codes>200</status_codes>
+                            <follow_redirects>1</follow_redirects>
+                            <post_type>0</post_type>
+                            <http_proxy/>
+                            <headers/>
+                            <retrieve_mode>0</retrieve_mode>
+                            <request_method>0</request_method>
+                            <output_format>0</output_format>
+                            <allow_traps>0</allow_traps>
+                            <ssl_cert_file/>
+                            <ssl_key_file/>
+                            <ssl_key_password/>
+                            <verify_peer>0</verify_peer>
+                            <verify_host>0</verify_host>
                             <application_prototypes/>
-                            <master_item_prototype/>
+                            <master_item/>
                         </item_prototype>
                     </item_prototypes>
                     <trigger_prototypes>
@@ -451,6 +558,23 @@
                     <graph_prototypes/>
                     <host_prototypes/>
                     <jmx_endpoint/>
+                    <timeout>3s</timeout>
+                    <url/>
+                    <query_fields/>
+                    <posts/>
+                    <status_codes>200</status_codes>
+                    <follow_redirects>1</follow_redirects>
+                    <post_type>0</post_type>
+                    <http_proxy/>
+                    <headers/>
+                    <retrieve_mode>0</retrieve_mode>
+                    <request_method>0</request_method>
+                    <allow_traps>0</allow_traps>
+                    <ssl_cert_file/>
+                    <ssl_key_file/>
+                    <ssl_key_password/>
+                    <verify_peer>0</verify_peer>
+                    <verify_host>0</verify_host>
                 </discovery_rule>
                 <discovery_rule>
                     <name>ELBv2 Discovery</name>
@@ -525,15 +649,33 @@
                             <logtimefmt/>
                             <preprocessing/>
                             <jmx_endpoint/>
+                            <timeout>3s</timeout>
+                            <url/>
+                            <query_fields/>
+                            <posts/>
+                            <status_codes>200</status_codes>
+                            <follow_redirects>1</follow_redirects>
+                            <post_type>0</post_type>
+                            <http_proxy/>
+                            <headers/>
+                            <retrieve_mode>0</retrieve_mode>
+                            <request_method>0</request_method>
+                            <output_format>0</output_format>
+                            <allow_traps>0</allow_traps>
+                            <ssl_cert_file/>
+                            <ssl_key_file/>
+                            <ssl_key_password/>
+                            <verify_peer>0</verify_peer>
+                            <verify_host>0</verify_host>
                             <application_prototypes/>
-                            <master_item_prototype/>
+                            <master_item/>
                         </item_prototype>
                         <item_prototype>
                             <name>ELBv2: {#TARGET_GROUP_LOAD_BALANCER_NAME} target group {#TARGET_GROUP_NAME} total targets</name>
                             <type>15</type>
                             <snmp_community/>
                             <snmp_oid/>
-                            <key>instances[{#TARGET_GROUP_LOAD_BALANCER_NAME}][{#TARGET_GROUP_NAME}]</key>
+                            <key>instances[{#TARGET_GROUP_LOAD_BALANCER_NAME}-{#TARGET_GROUP_NAME}]</key>
                             <delay>3600</delay>
                             <history>30d</history>
                             <trends>60d</trends>
@@ -567,13 +709,31 @@
                             <logtimefmt/>
                             <preprocessing/>
                             <jmx_endpoint/>
+                            <timeout>3s</timeout>
+                            <url/>
+                            <query_fields/>
+                            <posts/>
+                            <status_codes>200</status_codes>
+                            <follow_redirects>1</follow_redirects>
+                            <post_type>0</post_type>
+                            <http_proxy/>
+                            <headers/>
+                            <retrieve_mode>0</retrieve_mode>
+                            <request_method>0</request_method>
+                            <output_format>0</output_format>
+                            <allow_traps>0</allow_traps>
+                            <ssl_cert_file/>
+                            <ssl_key_file/>
+                            <ssl_key_password/>
+                            <verify_peer>0</verify_peer>
+                            <verify_host>0</verify_host>
                             <application_prototypes/>
-                            <master_item_prototype/>
+                            <master_item/>
                         </item_prototype>
                     </item_prototypes>
                     <trigger_prototypes>
                         <trigger_prototype>
-                            <expression>{Cloudwatch Template:instances[{#TARGET_GROUP_LOAD_BALANCER_NAME}][{#TARGET_GROUP_NAME}].last()}=-1</expression>
+                            <expression>{Cloudwatch Template:instances[{#TARGET_GROUP_LOAD_BALANCER_NAME}-{#TARGET_GROUP_NAME}].last()}=-1</expression>
                             <recovery_mode>0</recovery_mode>
                             <recovery_expression/>
                             <name>ELBv2: No data points for {#TARGET_GROUP_LOAD_BALANCER_NAME} target {#TARGET_GROUP_NAME}</name>
@@ -590,7 +750,7 @@
                             <tags/>
                         </trigger_prototype>
                         <trigger_prototype>
-                            <expression>{Cloudwatch Template:instances[{#TARGET_GROUP_LOAD_BALANCER_NAME}][{#TARGET_GROUP_NAME}].last()}=0</expression>
+                            <expression>{Cloudwatch Template:instances[{#TARGET_GROUP_LOAD_BALANCER_NAME}-{#TARGET_GROUP_NAME}].last()}=0</expression>
                             <recovery_mode>0</recovery_mode>
                             <recovery_expression/>
                             <name>ELBv2: {#TARGET_GROUP_LOAD_BALANCER_NAME} target group {#TARGET_GROUP_NAME} has no active instances</name>
@@ -658,6 +818,23 @@
                     </graph_prototypes>
                     <host_prototypes/>
                     <jmx_endpoint/>
+                    <timeout>3s</timeout>
+                    <url/>
+                    <query_fields/>
+                    <posts/>
+                    <status_codes>200</status_codes>
+                    <follow_redirects>1</follow_redirects>
+                    <post_type>0</post_type>
+                    <http_proxy/>
+                    <headers/>
+                    <retrieve_mode>0</retrieve_mode>
+                    <request_method>0</request_method>
+                    <allow_traps>0</allow_traps>
+                    <ssl_cert_file/>
+                    <ssl_key_file/>
+                    <ssl_key_password/>
+                    <verify_peer>0</verify_peer>
+                    <verify_host>0</verify_host>
                 </discovery_rule>
                 <discovery_rule>
                     <name>EMR discovery</name>
@@ -730,8 +907,26 @@
                             <logtimefmt/>
                             <preprocessing/>
                             <jmx_endpoint/>
+                            <timeout>3s</timeout>
+                            <url/>
+                            <query_fields/>
+                            <posts/>
+                            <status_codes>200</status_codes>
+                            <follow_redirects>1</follow_redirects>
+                            <post_type>0</post_type>
+                            <http_proxy/>
+                            <headers/>
+                            <retrieve_mode>0</retrieve_mode>
+                            <request_method>0</request_method>
+                            <output_format>0</output_format>
+                            <allow_traps>0</allow_traps>
+                            <ssl_cert_file/>
+                            <ssl_key_file/>
+                            <ssl_key_password/>
+                            <verify_peer>0</verify_peer>
+                            <verify_host>0</verify_host>
                             <application_prototypes/>
-                            <master_item_prototype/>
+                            <master_item/>
                         </item_prototype>
                         <item_prototype>
                             <name>{#CLUSTER_NAME} HDFS utilization</name>
@@ -772,8 +967,26 @@
                             <logtimefmt/>
                             <preprocessing/>
                             <jmx_endpoint/>
+                            <timeout>3s</timeout>
+                            <url/>
+                            <query_fields/>
+                            <posts/>
+                            <status_codes>200</status_codes>
+                            <follow_redirects>1</follow_redirects>
+                            <post_type>0</post_type>
+                            <http_proxy/>
+                            <headers/>
+                            <retrieve_mode>0</retrieve_mode>
+                            <request_method>0</request_method>
+                            <output_format>0</output_format>
+                            <allow_traps>0</allow_traps>
+                            <ssl_cert_file/>
+                            <ssl_key_file/>
+                            <ssl_key_password/>
+                            <verify_peer>0</verify_peer>
+                            <verify_host>0</verify_host>
                             <application_prototypes/>
-                            <master_item_prototype/>
+                            <master_item/>
                         </item_prototype>
                         <item_prototype>
                             <name>{#CLUSTER_NAME} unhealthy nodes</name>
@@ -814,8 +1027,26 @@
                             <logtimefmt/>
                             <preprocessing/>
                             <jmx_endpoint/>
+                            <timeout>3s</timeout>
+                            <url/>
+                            <query_fields/>
+                            <posts/>
+                            <status_codes>200</status_codes>
+                            <follow_redirects>1</follow_redirects>
+                            <post_type>0</post_type>
+                            <http_proxy/>
+                            <headers/>
+                            <retrieve_mode>0</retrieve_mode>
+                            <request_method>0</request_method>
+                            <output_format>0</output_format>
+                            <allow_traps>0</allow_traps>
+                            <ssl_cert_file/>
+                            <ssl_key_file/>
+                            <ssl_key_password/>
+                            <verify_peer>0</verify_peer>
+                            <verify_host>0</verify_host>
                             <application_prototypes/>
-                            <master_item_prototype/>
+                            <master_item/>
                         </item_prototype>
                     </item_prototypes>
                     <trigger_prototypes>
@@ -888,6 +1119,198 @@
                     <graph_prototypes/>
                     <host_prototypes/>
                     <jmx_endpoint/>
+                    <timeout>3s</timeout>
+                    <url/>
+                    <query_fields/>
+                    <posts/>
+                    <status_codes>200</status_codes>
+                    <follow_redirects>1</follow_redirects>
+                    <post_type>0</post_type>
+                    <http_proxy/>
+                    <headers/>
+                    <retrieve_mode>0</retrieve_mode>
+                    <request_method>0</request_method>
+                    <allow_traps>0</allow_traps>
+                    <ssl_cert_file/>
+                    <ssl_key_file/>
+                    <ssl_key_password/>
+                    <verify_peer>0</verify_peer>
+                    <verify_host>0</verify_host>
+                </discovery_rule>
+                <discovery_rule>
+                    <name>RDS cluster discovery</name>
+                    <type>10</type>
+                    <snmp_community/>
+                    <snmp_oid/>
+                    <key>aws.discovery[rds,{$REGION},{$ACCOUNT}, cluster]</key>
+                    <delay>3600;3600/1-5,00:00-24:00;21600/6-7,00:00-24:00</delay>
+                    <status>0</status>
+                    <allowed_hosts/>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <params/>
+                    <ipmi_sensor/>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <filter>
+                        <evaltype>0</evaltype>
+                        <formula/>
+                        <conditions/>
+                    </filter>
+                    <lifetime>0</lifetime>
+                    <description/>
+                    <item_prototypes>
+                        <item_prototype>
+                            <name>Cluster {#CLUSTER_ID} CPU usage</name>
+                            <type>10</type>
+                            <snmp_community/>
+                            <snmp_oid/>
+                            <key>cloudwatch.metric[600,CPUUtilization,AWS/RDS,Average,{$REGION},DBClusterIdentifier={#CLUSTER_ID},{$ACCOUNT}]</key>
+                            <delay>600</delay>
+                            <history>90d</history>
+                            <trends>365d</trends>
+                            <status>0</status>
+                            <value_type>0</value_type>
+                            <allowed_hosts/>
+                            <units>%</units>
+                            <snmpv3_contextname/>
+                            <snmpv3_securityname/>
+                            <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                            <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                            <snmpv3_authpassphrase/>
+                            <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                            <snmpv3_privpassphrase/>
+                            <params/>
+                            <ipmi_sensor/>
+                            <authtype>0</authtype>
+                            <username/>
+                            <password/>
+                            <publickey/>
+                            <privatekey/>
+                            <port/>
+                            <description/>
+                            <inventory_link>0</inventory_link>
+                            <applications>
+                                <application>
+                                    <name>RDS CPU</name>
+                                </application>
+                            </applications>
+                            <valuemap/>
+                            <logtimefmt/>
+                            <preprocessing/>
+                            <jmx_endpoint/>
+                            <timeout>3s</timeout>
+                            <url/>
+                            <query_fields/>
+                            <posts/>
+                            <status_codes>200</status_codes>
+                            <follow_redirects>1</follow_redirects>
+                            <post_type>0</post_type>
+                            <http_proxy/>
+                            <headers/>
+                            <retrieve_mode>0</retrieve_mode>
+                            <request_method>0</request_method>
+                            <output_format>0</output_format>
+                            <allow_traps>0</allow_traps>
+                            <ssl_cert_file/>
+                            <ssl_key_file/>
+                            <ssl_key_password/>
+                            <verify_peer>0</verify_peer>
+                            <verify_host>0</verify_host>
+                            <application_prototypes/>
+                            <master_item/>
+                        </item_prototype>
+                        <item_prototype>
+                            <name>Cluster {#CLUSTER_ID} volume storage used</name>
+                            <type>10</type>
+                            <snmp_community/>
+                            <snmp_oid/>
+                            <key>cloudwatch.metric[600,VolumeBytesUsed,AWS/RDS,Average,{$REGION},DBClusterIdentifier={#CLUSTER_ID},{$ACCOUNT}]</key>
+                            <delay>600</delay>
+                            <history>90d</history>
+                            <trends>365d</trends>
+                            <status>0</status>
+                            <value_type>0</value_type>
+                            <allowed_hosts/>
+                            <units>B</units>
+                            <snmpv3_contextname/>
+                            <snmpv3_securityname/>
+                            <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                            <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                            <snmpv3_authpassphrase/>
+                            <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                            <snmpv3_privpassphrase/>
+                            <params/>
+                            <ipmi_sensor/>
+                            <authtype>0</authtype>
+                            <username/>
+                            <password/>
+                            <publickey/>
+                            <privatekey/>
+                            <port/>
+                            <description/>
+                            <inventory_link>0</inventory_link>
+                            <applications>
+                                <application>
+                                    <name>RDS Storage</name>
+                                </application>
+                            </applications>
+                            <valuemap/>
+                            <logtimefmt/>
+                            <preprocessing/>
+                            <jmx_endpoint/>
+                            <timeout>3s</timeout>
+                            <url/>
+                            <query_fields/>
+                            <posts/>
+                            <status_codes>200</status_codes>
+                            <follow_redirects>1</follow_redirects>
+                            <post_type>0</post_type>
+                            <http_proxy/>
+                            <headers/>
+                            <retrieve_mode>0</retrieve_mode>
+                            <request_method>0</request_method>
+                            <output_format>0</output_format>
+                            <allow_traps>0</allow_traps>
+                            <ssl_cert_file/>
+                            <ssl_key_file/>
+                            <ssl_key_password/>
+                            <verify_peer>0</verify_peer>
+                            <verify_host>0</verify_host>
+                            <application_prototypes/>
+                            <master_item/>
+                        </item_prototype>
+                    </item_prototypes>
+                    <trigger_prototypes/>
+                    <graph_prototypes/>
+                    <host_prototypes/>
+                    <jmx_endpoint/>
+                    <timeout>3s</timeout>
+                    <url/>
+                    <query_fields/>
+                    <posts/>
+                    <status_codes>200</status_codes>
+                    <follow_redirects>1</follow_redirects>
+                    <post_type>0</post_type>
+                    <http_proxy/>
+                    <headers/>
+                    <retrieve_mode>0</retrieve_mode>
+                    <request_method>0</request_method>
+                    <allow_traps>0</allow_traps>
+                    <ssl_cert_file/>
+                    <ssl_key_file/>
+                    <ssl_key_password/>
+                    <verify_peer>0</verify_peer>
+                    <verify_host>0</verify_host>
                 </discovery_rule>
                 <discovery_rule>
                     <name>RDS discovery</name>
@@ -960,8 +1383,26 @@
                             <logtimefmt/>
                             <preprocessing/>
                             <jmx_endpoint/>
+                            <timeout>3s</timeout>
+                            <url/>
+                            <query_fields/>
+                            <posts/>
+                            <status_codes>200</status_codes>
+                            <follow_redirects>1</follow_redirects>
+                            <post_type>0</post_type>
+                            <http_proxy/>
+                            <headers/>
+                            <retrieve_mode>0</retrieve_mode>
+                            <request_method>0</request_method>
+                            <output_format>0</output_format>
+                            <allow_traps>0</allow_traps>
+                            <ssl_cert_file/>
+                            <ssl_key_file/>
+                            <ssl_key_password/>
+                            <verify_peer>0</verify_peer>
+                            <verify_host>0</verify_host>
                             <application_prototypes/>
-                            <master_item_prototype/>
+                            <master_item/>
                         </item_prototype>
                         <item_prototype>
                             <name>{#RDS_ID} free storage space</name>
@@ -1002,8 +1443,26 @@
                             <logtimefmt/>
                             <preprocessing/>
                             <jmx_endpoint/>
+                            <timeout>3s</timeout>
+                            <url/>
+                            <query_fields/>
+                            <posts/>
+                            <status_codes>200</status_codes>
+                            <follow_redirects>1</follow_redirects>
+                            <post_type>0</post_type>
+                            <http_proxy/>
+                            <headers/>
+                            <retrieve_mode>0</retrieve_mode>
+                            <request_method>0</request_method>
+                            <output_format>0</output_format>
+                            <allow_traps>0</allow_traps>
+                            <ssl_cert_file/>
+                            <ssl_key_file/>
+                            <ssl_key_password/>
+                            <verify_peer>0</verify_peer>
+                            <verify_host>0</verify_host>
                             <application_prototypes/>
-                            <master_item_prototype/>
+                            <master_item/>
                         </item_prototype>
                         <item_prototype>
                             <name>{#RDS_ID} % free storage space</name>
@@ -1044,8 +1503,26 @@
                             <logtimefmt/>
                             <preprocessing/>
                             <jmx_endpoint/>
+                            <timeout>3s</timeout>
+                            <url/>
+                            <query_fields/>
+                            <posts/>
+                            <status_codes>200</status_codes>
+                            <follow_redirects>1</follow_redirects>
+                            <post_type>0</post_type>
+                            <http_proxy/>
+                            <headers/>
+                            <retrieve_mode>0</retrieve_mode>
+                            <request_method>0</request_method>
+                            <output_format>0</output_format>
+                            <allow_traps>0</allow_traps>
+                            <ssl_cert_file/>
+                            <ssl_key_file/>
+                            <ssl_key_password/>
+                            <verify_peer>0</verify_peer>
+                            <verify_host>0</verify_host>
                             <application_prototypes/>
-                            <master_item_prototype/>
+                            <master_item/>
                         </item_prototype>
                     </item_prototypes>
                     <trigger_prototypes>
@@ -1135,6 +1612,23 @@
                     </graph_prototypes>
                     <host_prototypes/>
                     <jmx_endpoint/>
+                    <timeout>3s</timeout>
+                    <url/>
+                    <query_fields/>
+                    <posts/>
+                    <status_codes>200</status_codes>
+                    <follow_redirects>1</follow_redirects>
+                    <post_type>0</post_type>
+                    <http_proxy/>
+                    <headers/>
+                    <retrieve_mode>0</retrieve_mode>
+                    <request_method>0</request_method>
+                    <allow_traps>0</allow_traps>
+                    <ssl_cert_file/>
+                    <ssl_key_file/>
+                    <ssl_key_password/>
+                    <verify_peer>0</verify_peer>
+                    <verify_host>0</verify_host>
                 </discovery_rule>
                 <discovery_rule>
                     <name>S3 discovery</name>
@@ -1207,8 +1701,26 @@
                             <logtimefmt/>
                             <preprocessing/>
                             <jmx_endpoint/>
+                            <timeout>3s</timeout>
+                            <url/>
+                            <query_fields/>
+                            <posts/>
+                            <status_codes>200</status_codes>
+                            <follow_redirects>1</follow_redirects>
+                            <post_type>0</post_type>
+                            <http_proxy/>
+                            <headers/>
+                            <retrieve_mode>0</retrieve_mode>
+                            <request_method>0</request_method>
+                            <output_format>0</output_format>
+                            <allow_traps>0</allow_traps>
+                            <ssl_cert_file/>
+                            <ssl_key_file/>
+                            <ssl_key_password/>
+                            <verify_peer>0</verify_peer>
+                            <verify_host>0</verify_host>
                             <application_prototypes/>
-                            <master_item_prototype/>
+                            <master_item/>
                         </item_prototype>
                         <item_prototype>
                             <name>{#BUCKET_NAME} Number Of Objects</name>
@@ -1249,8 +1761,26 @@
                             <logtimefmt/>
                             <preprocessing/>
                             <jmx_endpoint/>
+                            <timeout>3s</timeout>
+                            <url/>
+                            <query_fields/>
+                            <posts/>
+                            <status_codes>200</status_codes>
+                            <follow_redirects>1</follow_redirects>
+                            <post_type>0</post_type>
+                            <http_proxy/>
+                            <headers/>
+                            <retrieve_mode>0</retrieve_mode>
+                            <request_method>0</request_method>
+                            <output_format>0</output_format>
+                            <allow_traps>0</allow_traps>
+                            <ssl_cert_file/>
+                            <ssl_key_file/>
+                            <ssl_key_password/>
+                            <verify_peer>0</verify_peer>
+                            <verify_host>0</verify_host>
                             <application_prototypes/>
-                            <master_item_prototype/>
+                            <master_item/>
                         </item_prototype>
                     </item_prototypes>
                     <trigger_prototypes>
@@ -1341,6 +1871,23 @@
                     </graph_prototypes>
                     <host_prototypes/>
                     <jmx_endpoint/>
+                    <timeout>3s</timeout>
+                    <url/>
+                    <query_fields/>
+                    <posts/>
+                    <status_codes>200</status_codes>
+                    <follow_redirects>1</follow_redirects>
+                    <post_type>0</post_type>
+                    <http_proxy/>
+                    <headers/>
+                    <retrieve_mode>0</retrieve_mode>
+                    <request_method>0</request_method>
+                    <allow_traps>0</allow_traps>
+                    <ssl_cert_file/>
+                    <ssl_key_file/>
+                    <ssl_key_password/>
+                    <verify_peer>0</verify_peer>
+                    <verify_host>0</verify_host>
                 </discovery_rule>
             </discovery_rules>
             <httptests/>
