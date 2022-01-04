@@ -1,6 +1,6 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 from discovery.aws_client import AWSClient
-import ConfigParser
+import configparser
 import datetime
 import argparse
 
@@ -25,7 +25,7 @@ class Checker(AWSClient):
         else:
             ret_val = -1
         if self.debug:
-            print result
+            print (result)
         # This is a dirty hack, because CW returns bytes in float
         # This can be a problem, because RDS instances can be huge
         # and overflow Zabbix DB floating point data type
@@ -78,17 +78,17 @@ if __name__ == "__main__":
     dimensions = list()
     for dimension in args.dimension.split(","):
         instance = dimension.split("=")
-        dimensions.append(dict(zip(("Name", "Value"), instance)))
+        dimensions.append(dict(list(zip(("Name", "Value"), instance))))
 
     default_path = "/usr/lib/zabbix/scripts/conf/aws.conf"
     conf_file = args.config if args.config else default_path
-    config = ConfigParser.ConfigParser()
+    config = configparser.ConfigParser()
     config.readfp(open(conf_file))
     checker = Checker(config, args.account, "cloudwatch", args.region)
     checker.debug = args.debug
 
-    print checker.get_metric(interval=args.interval,
+    print (checker.get_metric(interval=args.interval,
                              metric=args.metric,
                              namespace=args.namespace,
                              statistic=args.statistic,
-                             dimensions=dimensions)
+                             dimensions=dimensions))
